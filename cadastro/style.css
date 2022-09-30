@@ -1,17 +1,21 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 
 #cadastroBox{
-    padding: 10vh;
-    background-color: rgb(229, 232, 235);
-    border: 2vh;
-    border-radius: 5px;
+  padding: 10vh;
+  background-color: rgb(229, 232, 235);
+  border: 2vh;
+  border-radius: 5px;
 } 
 
+.container{
+  overflow: hidden;
+}
+
 h2{
-    color: crimson;
+  color: crimson;
 }
 
 
@@ -19,16 +23,13 @@ h2{
   background-color: #13aa52;
   border: 1px solid #13aa52;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
   box-sizing: border-box;
-  color: #fff;
+  color: rgb(243, 236, 236);
   cursor: pointer;
-  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   outline: none;
   outline: 0;
-  padding: 10px 25px;
+  padding: 10vh 20vh;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
@@ -40,10 +41,27 @@ h2{
 .button-37:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
   transform: translateY(-2px);
+  color: #fff;
 }
 
 @media (min-width: 768px) {
   .button-37 {
-    padding: 10px 30px;
+    padding: 6px 30px;
   }
+}
+
+
+/* erro ou sucesso */
+
+.form-control.success input {
+  background-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
