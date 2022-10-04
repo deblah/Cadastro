@@ -1,7 +1,7 @@
 # Cadastro
 Página de cadastro estágio
 
-<p>Sem muito segredo um sistema de cadastro com os atributos</p>
+<p>Sem muito segredo um sistema de cadastro com os atributos:</p>
 
 <ul>
   <li>Login da minha UFMG;</li>
