@@ -13,34 +13,44 @@
     <body>
         <div class="container-fluid" id="cadastroBox">
             <header>
-                <h2>Informações</h2>
+                <h2><b>Informações</b></h2>
                 <br />
             </header>
-            <div>
+            <div class="infos">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4>Nome:</h4>
-                        <p o></p> 
+                        <h4><b>Nome:</b> <?=$_POST['nome']?></h4>
+                        
                     </div>
                 </div>
                 <div class="row"> 
                     <div class="col-sm-12">
-                        <h4>Login: </h4> 
+                        <h4><b>Login:</b>  <?=$_POST['login']?></h4> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4>CPF: </h4> 
+                        <h4><b>CPF:</b>  <?=$_POST['cpf']?></h4> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4>Data de Nascimento: </h4>
+                        <h4><b>Data de Nascimento:</b>  <?=$_POST['dataNasc']?></h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4> E-mail: </h4> 
+                        <h4><b>E-mail:</b>  <?=$_POST['email']?></h4> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4><b>Telefone:</b>  <?=$_POST['telefone']?></h4> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4><b>Curso:</b>  <?=$_POST['curso']?></h4> 
                     </div>
                 </div>            
             </div>

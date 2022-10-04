@@ -1,0 +1,1 @@
+<p>Nome: <?=$_POST['login']?></p>
