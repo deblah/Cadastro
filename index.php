@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +16,22 @@
         <div class="container-fluid" id="cadastroBox">
             <form name="formulario" id="formulario" method="post" action="http://localhost/cadastro/tela.php">
                 <header>
-                    <h2><b>Página de Cadastro</b></h2>
-                    <br />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Página de Cadastro</h2>
+                            <br />
+                        </div>
+                    </div>
                 </header>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <h4>Login minhaUFMG</h4>
                         <input type="text" id="login" name="login" class="form-control" placeholder="Login" required/>
                         <br/>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-6">
                         <h4>CPF</h4>
-                        <input type="text" id="cpf" name="cpf" oninput="transformaCPF(this)" class="form-control" placeholder="CPF" minlength="14" maxlength="14" required/>
+                        <input type="text" id="cpf" name="cpf" class="form-control" oninput="transformaCPF(this)" placeholder="CPF" minlength="14" maxlength="14" required/>
                         <br />
                     </div>
                 </div>
@@ -48,7 +52,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h4>Senha</h4>
-                        <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" minlength="8" required/>
+                        <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" minlength="8" maxlength="15" required/>
                         <br />
                     </div>
                     <div class="col-sm-6">
@@ -66,7 +70,7 @@
                     <div class="col-sm-6">
                         <h4>Data de Nascimento</h4>
                         <div class="input-group date" id="datepicker">
-                            <input type="text" id="dataNasc" name="dataNasc" class="form-control" placeholder="Selecione uma data" required/>
+                            <input type="text" id="dataNasc" name="dataNasc" class="form-control" placeholder="Selecione uma data" onkeyup="transformaData(this)" required/>
                             <span class="input-group-append">
                                 <span class="input-group-text bg-white d-block">
                                     <i class="fa fa-calendar"></i>
@@ -94,13 +98,14 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <button type="submit" id="butaoCadastro" class="btn button-37" role="button">Cadastrar</button>
+                        <button type="button" id="butaoCadastro" onclick="validar()" class="btn button-cadastro" role="button">Cadastrar</button>
                     </div>
                 </div>
             </form>
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
         <script type="text/javascript" src="script.js"></script>

@@ -13,8 +13,12 @@
     <body>
         <div class="container-fluid" id="cadastroBox">
             <header>
-                <h2><b>Informações</b></h2>
-                <br />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Informações</h2>
+                        <br />
+                    </div>
+                </div>
             </header>
             <div class="infos">
                 <div class="row">

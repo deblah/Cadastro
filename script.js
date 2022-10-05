@@ -14,31 +14,28 @@ function transformaCPF(i){
 
 }
 
-//Valida se o cpf existe
 
-//Valida se o email existe existe
-
-
-//Função de deixar o telei=one nos parametros xx xxxxx-xxxx
-
-function transformaTel(i){
+//Função de deixar a dat nos padroes xx/xx/xxxx
+function transformaData(i) {
    var v = i.value;
-   
-   if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-      i.value = v.substring(0, v.length-1);
-      return;
+   if (v.match(/^\d{2}$/) !== null) {
+      this.value = v + '/';
    }
-   
-   i.setAttribute("maxlength", "13");
-   if (v.length == 2) i.value += " ";
-   if (v.length == 8) i.value += "-";
-
+   else if (v.match(/^\d{2}\/\d{2}$/) !== null) {
+      this.value = v + '/';
+   }
 }
+
+
+//Função de deixar o telefone nos parametros xx xxxxx-xxxx
 
 //Seleciona data
 // Data Picker Initialization
 $(function() {
-  $('#datepicker').datepicker();
+   $('#datepicker').datepicker({
+      format: 'dd/mm/yyyy',
+      language: 'pt-BR'
+  });
 });
 
 

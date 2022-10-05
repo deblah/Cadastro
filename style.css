@@ -18,8 +18,7 @@ body{
 }
 
 h2{
-  color: crimson;
-  font-weight: bolder;
+  color: rgb(255, 0, 0);
 }
 
 .infos{
@@ -27,7 +26,7 @@ h2{
 }
 
 
-.button-37 {
+.button-cadastro {
   background-color: #13aa52;
   border: 1px solid #13aa52;
   border-radius: 4px;
@@ -46,14 +45,22 @@ h2{
   touch-action: manipulation;
 }
 
-.button-37:hover {
+.button-cadastro:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
   transform: translateY(-2px);
   color: #fff;
 }
 
 @media (min-width: 768px) {
-  .button-37 {
+  .button-cadastro {
     padding: 6px 30px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
