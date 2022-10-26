@@ -1,10 +1,13 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
+  overflow: scroll;
+  overflow-x: auto;
+  max-height: fit-content;
 }
 
 #cadastroBox{
-  padding: 20vh;
+  padding: 10vh;
   background-color: rgb(229, 232, 235);
   border: 2vh;
   border-radius: 5px;
@@ -14,19 +17,19 @@ body{
 } 
 
 .container{
-  overflow: hidden;
+  overflow:auto;
+  overflow-x: auto;
+  max-height: fit-content;
 }
 
 h2{
   color: rgb(255, 0, 0);
 }
 
-.infos{
-  padding: 10px;
-}
 
 
-.button-cadastro {
+
+.button-padrao {
   background-color: #13aa52;
   border: 1px solid #13aa52;
   border-radius: 4px;
@@ -36,7 +39,7 @@ h2{
   font-weight: bold;
   outline: none;
   outline: 0;
-  padding: 10vh 20vh;
+  padding: 8px 16px;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
@@ -45,22 +48,31 @@ h2{
   touch-action: manipulation;
 }
 
-.button-cadastro:hover {
+.button-padrao:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
   transform: translateY(-2px);
   color: #fff;
 }
 
-@media (min-width: 768px) {
-  .button-cadastro {
-    padding: 6px 30px;
-  }
+.button-detalhe{
+  padding: 2vh;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
+
+
+.col-sm-4{
+  width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+
+  #cadastroBox{
+    padding: 5vh;
+  } 
+
+  .col-sm-12{
     width: 100%;
   }
+
 }
 
